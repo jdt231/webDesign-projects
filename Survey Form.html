@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form - Gaming</h1>
+    <p id="description">Thanks for taking the time to fill out this survey. </p>
+    <p>We love games and would love to know which ones you like</p>
+    <form id="survey-form">
+      <fieldset>
+
+        <label id="name-label">Enter your name:
+          <input id="name" type="text" required placeholder="John Snow"></input>
+        </label>
+
+        <label id="email-label">Enter your email:
+          <input id="email" type="email" required placeholder="johnsnow@hotmail.com"></input>
+        </label>
+
+        <label id="number-label">Enter your age:
+          <input id="number" type="number" min="10" max="100" required placeholder="25"></input>
+        </label>
+
+        <label id="select-label">Select your gender
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </label>
+
+        <label id="contact-label">Your preferred method of contact:
+        <label><input type="radio" name="contact-type" class="inline" value="1"/>Email</label>
+        <label><input type="radio" name="contact-type" class="inline" value="2"/>Phone</label>
+        <label><input type="radio" name="contact-type" class="inline" value="3"/>Post</label>
+        
+        </fieldset>
+        
+        <fieldset>
+        <label>What genre of games do you like? Pick as many as you like!</label>
+        <label><input type="checkbox" name="test" class="inline" value="1"/>Action</label>
+        <label><input type="checkbox" name="test" class="inline" value="2"/>Adventure </label>
+        <label><input type="checkbox" name="test" class="inline" value="3"/>Platformer </label>
+        <label><input type="checkbox" name="test" class="inline" value="4"/>RTS </label>
+        <label><input type="checkbox" name="test" class="inline" value="5"/>1st Person Shooter </label>
+        <label><input type="checkbox" name="test" class="inline" value="6"/>RPG </label>
+
+        <label>List some of your favourite games here:
+          <textarea name="bio" rows="3" cols="30" placeholder="The Witcher 3..."></textarea>
+			  </label>
+      </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+
+    </form>  
+  <body>
+  </html>
